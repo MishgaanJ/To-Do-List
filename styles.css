@@ -1,0 +1,212 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, red, orange, black);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  background: linear-gradient(270deg, rgb(158, 124, 124), orange, red, blue, purple);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .input-box {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .input-box input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  outline: none;
+  cursor: pointer;
+}
+main .input-box button {
+  padding: 10px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0;
+  border: none;
+  background-color: orange;
+  color: black;
+}
+main .tasks {
+  width: 75%;
+}
+main .tasks ul {
+  list-style: none;
+}
+main .tasks ul li {
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+main .tasks ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+main .tasks ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+main .tasks ul li span:hover {
+  background: #edeef0;
+}
+main .tasks ul .checked {
+  text-decoration: line-through;
+  color: #555;
+}
+main .tasks ul .checked::before {
+  background-image: url(./images/checked.png);
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, red, red, orange, black);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 50vh;
+    overflow-x: hidden;
+  }
+  main {
+    width: 90vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  main h1 {
+    background: linear-gradient(270deg, rgb(158, 124, 124), orange, red, blue, purple);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
+  main .input-box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  main .input-box input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    outline: none;
+    cursor: pointer;
+  }
+  main .input-box button {
+    padding: 10px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0;
+    border: none;
+    background-color: orange;
+    color: black;
+  }
+  main .tasks {
+    max-width: 450px;
+    width: 350px;
+    text-align: start;
+  }
+  main .tasks ul {
+    list-style: none;
+  }
+  main .tasks ul li {
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  main .tasks ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+  }
+  main .tasks ul li span {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  main .tasks ul li span:hover {
+    background: #edeef0;
+  }
+  main .tasks ul .checked {
+    text-decoration: line-through;
+    color: #555;
+  }
+  main .tasks ul .checked::before {
+    background-image: url(./images/checked.png);
+    background-size: cover;
+  }
+}/*# sourceMappingURL=styles.css.map */
